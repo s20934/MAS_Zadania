@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
 
+import static java.nio.file.FileVisitResult.CONTINUE;
 import static java.time.temporal.ChronoUnit.DAYS;
 
 
@@ -72,9 +73,6 @@ public class Main {
         System.out.println();
 
 
-
-
-
 //        4. Napisz program zapamiętujący zmienną liczbę string’ów, a następnie usuwający losowe z nich.
 //                Wyświetl na konsolę dane przed i po operacji.
         System.out.println("===========");
@@ -122,6 +120,8 @@ public class Main {
 //        informacje ich dotyczące.
 
 
+
+
 //        7. Zapamiętaj dane charakteryzujące dowolny graniastosłup. Opracuj rozwiązanie
 //        przechowujące dane o znanej oraz zmiennej liczbie graniastosłupów. Wyświetl na konsoli
 //        informacje ich dotyczące.
@@ -147,6 +147,98 @@ public class Main {
 
 //        11. Podaj przykłady zastosowania konstrukcji break oraz continue.
         //NP switch Case
+
+
+//        12. Stwórz krótki program korzystający z konstrukcji switch. Pamiętaj o właściwym
+//        wykorzystaniu break oraz default.
+
+        System.out.println("===========");
+        System.out.println("Zadanie 12");
+
+        int podanaLiczba = 3;
+
+        switch (podanaLiczba){
+            case 1:
+                System.out.println("jestem jeden");
+                break;
+            case 2:
+                System.out.println("jestem dwa");
+                break;
+            case 3:
+                System.out.println("Jestem trzy i nie mam break");
+            case 4:
+                System.out.println("Jestem cztery");
+            default:
+                System.out.println("Wartosc domyslna");
+        }
+
+
+
+//        13. Stwórz krótki program korzystający z pętli while oraz do/while. Czym one się różnią?
+        //while jeśli warunek nie jest spełniony, nie zostanie wykonana
+       int a = 5;
+        while(a<5){
+            System.out.println("Wszedlem do while");
+        }
+
+        int b = 10;
+
+        do{
+            System.out.println("Jestem w do while");
+        }while (b<10);
+
+        //do while jeśli warunek nie jest spełniony, zostanie wykonana przynajmniej raz
+
+//        14. Chcemy przechować informacje o różnych rodzajach urządzeń, każde z nich ma różny zestaw
+//        cech. Jak to zrobić? Jak umieścić je we wspólnej kolekcji i wyświetlić na konsolę?
+
+
+
+//                15. Mamy kompletnie różne byty, ale każdy z nich ma wspólną umiejętność, np. poruszania się.
+//        Jak to zapamiętać w programie, iterować po nich i uruchamiać tę umiejętność? Nie wolno
+//        stosować wspólnej nadklasy.
+
+
+//        16. Podaj przykład wykorzystania własnej klasy obsługi błędu i wykorzystania jej razem z
+//        konstrukcją throw.
+
+
+//        17. Załóżmy, że potrzebujemy przechować informacje, np. o silnikach. Mają jakieś wspólne cechy,
+//        a jedną z nich jest rodzaj silnika. Jak to zrobić? Jak będzie wyglądała metoda, która w zależności
+//        od rodzaju silnika, będzie robiła różne rzeczy. Podaj dwa sposoby rozwiązania tego problemu i
+//        ich zalety/wady.
+
+
+//        18. Podaj przykłady wymagań biznesowych, które można zrealizować za pomocą różnych rodzajów
+//        pojemników. Stwórz takie implementacje.
+//                a. natywna tablica,
+//        b. lista,
+//                c. zbiór (Set),
+//                d. mapa (Map).
+//                        W każdym z przypadków, dodaj kilka obiektów, usuń kilka spełniających określone wymagania,
+//        wyszukaj oraz wyświetl zawartość pojemników.
+
+
+//        19. Po co w języku Java stosuje się generics? Stwórz przykładowe programy, wykorzystujące tę
+//        koncepcję przy implementacji klas oraz metod.
+
+
+//        20. Podaj przykład zastosowania pętli for-each.
+
+
+//        21. Zapisz do pliku losowe string’i. Następnie je odczytaj i wyświetl na konsoli.
+
+
+//        22. Zapisz/odczytaj do/z pliku przykładowe dane opisujące osobę. Postaraj się aby zajmowały jak
+//        najmniej miejsca. Rozważ wykorzystanie klasy ZipOutputStream z biblioteki Java.
+//        23. Wyświetl listę plików w podanym katalogu. Sprawdź czy znajduje się tam plik, którego nazwa
+//        zawiera podany tekst.
+//        24. Podaj przykład wykorzystania konstrukcji try-with-resources języka Java.
+//        25. Podaj przykład wykorzystania notacji diamentowej <> języka Java. Jakie są jej zalety/wady?
+//                26. Stwórz przykład wykorzystujący umieszczenie kodu metody w interfejsie (wymaga Java 8 lub
+//        nowsza).
+//        27. Stwórz przykład używający wyrażeń lambda w Java.
+
 
 
     }
